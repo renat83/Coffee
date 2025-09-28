@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Coffee.Models.Entity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Coffee.Data
@@ -9,5 +10,7 @@ namespace Coffee.Data
             : base(options)
         {
         }
+
+        public DbSet<News> News => Set<News>();
     }
 }

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Coffee.Controllers
 {
     [Authorize(Roles = "Administrator")]
-    public class Admin : Controller
+    public class AdminController : Controller
     {
         [Authorize(Roles = "Administrator")]
         public IActionResult Index()
